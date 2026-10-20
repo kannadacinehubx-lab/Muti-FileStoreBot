@@ -10,20 +10,20 @@ from logging.handlers import RotatingFileHandler
 # =============================================================================
 
 # Telegram API credentials from https://my.telegram.org
-API_ID = int(os.environ.get("API_ID", ""))
+API_ID = int(os.environ.get("API_ID", "22876298"))
 APP_ID = API_ID # Alias for backward compatibility
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "cda7be15fbe283b5b97e8fb8c4233e36")
 #@cantarellabots
 # Main controller bot token from @BotFather
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "8973404076:AAG4D365ocNheIwoNRcYMx2hTWDP5jlStl8")
 TG_BOT_TOKEN = BOT_TOKEN # Alias for backward compatibility
 #@cantarellabots
 # Owner's Telegram user ID (numeric)
-OWNER_ID = int(os.environ.get("OWNER_ID", "5756495153"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "8340629952"))
 
 # MongoDB connection URI
-MONGO_URI = os.environ.get("MONGO_URI", "")
-MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "cantarellabots")
+MONGO_URI = os.environ.get("MONGO_URI", "mongodb+srv://Vishnuabhyantha_db:Baadshah@cluster0.fuxtgqk.mongodb.net/?appName=Cluster0")
+MONGO_DB_NAME = os.environ.get("MONGO_DB_NAME", "cluster0")
 DB_URI = MONGO_URI    # Alias for old bot.py
 DB_NAME = MONGO_DB_NAME # Alias for old bot.py
 
@@ -31,10 +31,10 @@ DB_NAME = MONGO_DB_NAME # Alias for old bot.py
 CHANNEL_ID = 0
 
 # Central log channel for logging bot creations and generated links
-MAIN_LOG_CHANNEL = int(os.environ.get("MAIN_LOG_CHANNEL", ""))
+MAIN_LOG_CHANNEL = int(os.environ.get("MAIN_LOG_CHANNEL", "-1004388805440"))
 
 # Force-subscribe channel for the main bot (username without @)
-FSUB_CHANNEL = os.environ.get("FSUB_CHANNEL", "cantarellabots") 
+FSUB_CHANNEL = os.environ.get("FSUB_CHANNEL", "kannada_cinehub") 
 
 # =============================================================================
 # ENCRYPTION — Used to secure bot tokens in the database
@@ -77,16 +77,16 @@ HIBERNATION_HOURS = int(os.environ.get("HIBERNATION_HOURS", "48"))
 
 START_PIC = os.environ.get(
     "START_PIC",
-    "https://ibb.co/95CW1J7"
+    "https://i.ibb.co/zhFr97LK/x.jpg"
 )
 
 FORCE_PIC = os.environ.get(
     "FORCE_PIC",
-    "https://ibb.co/mFJY2bhx"
+    "https://i.ibb.co/zhFr97LK/x.jpg"
 )
 
 START_MSG = """<b>━━━━━━━━━━━━━━━━━━━━━
-⚡ 𝗖𝗔𝗡𝗧𝗔𝗥𝗘𝗟𝗟𝗔 𝗙𝗜𝗟𝗘𝗦𝗧𝗢𝗥𝗘 ⚡
+⚡ 𝗞𝗖 𝗙𝗜𝗟𝗘𝗦 ⚡
 ━━━━━━━━━━━━━━━━━━━━━</b>
 
 <blockquote>ᴡᴇʟᴄᴏᴍᴇ, {mention}!
@@ -138,7 +138,7 @@ ABOUT_MSG = """<b>━━━━━━━━━━━━━━━━━━━━�
 ℹ️ 𝗔𝗕𝗢𝗨𝗧
 ━━━━━━━━━━━━━━━━━━━━━</b>
 
-<blockquote><b>⚡ ᴄᴀɴᴛᴀʀᴇʟʟ ꜰɪʟᴇsᴛᴏʀᴇ ᴠ3.0</b>
+<blockquote><b>⚡ 𝗞𝗖 𝗙𝗜𝗟𝗘𝗦 ᴠ3.0</b>
 
 ᴀ ᴘʀᴇᴍɪᴜᴍ ᴍᴜʟᴛɪ-ᴜsᴇʀ ᴛᴇʟᴇɢʀᴀᴍ
 ꜰɪʟᴇsᴛᴏʀᴇ ᴘʟᴀᴛꜰᴏʀᴍ.
@@ -153,7 +153,7 @@ ABOUT_MSG = """<b>━━━━━━━━━━━━━━━━━━━━�
 │ ◈ ᴀᴜᴛᴏ-ʜɪʙᴇʀɴᴀᴛɪᴏɴ
 ╰──────────────────╯
 
-<b>ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ</b> @cantarellabots</blockquote>"""
+<b>ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ</b> @kannada_cinehub</blockquote>"""
 
 FORCE_MSG = """<b>━━━━━━━━━━━━━━━━━━━━━
 🔒 𝗔𝗖𝗖𝗘𝗦𝗦 𝗥𝗘𝗦𝗧𝗥𝗜𝗖𝗧𝗘𝗗
